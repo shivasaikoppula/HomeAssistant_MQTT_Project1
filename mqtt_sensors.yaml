@@ -1,0 +1,16 @@
+mqtt:
+  sensor:
+    - name: "Temperature"
+      state_topic: "home/gowtham-42110665/sensor/temperature"
+      unit_of_measurement: "°C"
+      device_class: temperature
+
+    - name: "Humidity"
+      state_topic: "home/gowtham-42110665/sensor/humidity"
+      unit_of_measurement: "%"
+      device_class: humidity
+
+    - name: "Light"
+      state_topic: "home/gowtham-42110665/sensor/light"
+      unit_of_measurement: "lx"
+      device_class: illuminance
