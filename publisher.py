@@ -2,8 +2,8 @@ import paho.mqtt.client as mqtt
 import random
 import time
 
-student_name = "Gowtham Kotla"
-unique_id = "42110665"
+student_name = "Shiva Sai Koppula"
+unique_id = "42110655"
 
 broker = "192.168.1.14"
 port = 1883
@@ -16,7 +16,7 @@ while True:
     humidity = round(random.uniform(40, 80), 2)
     light = random.randint(100, 900)
 
-    topic_prefix = "home/gowtham-42110665/sensor"
+    topic_prefix = "home/shivasai-42110655/sensor"
 
     client.publish(f"{topic_prefix}/temperature", temperature)
     client.publish(f"{topic_prefix}/humidity", humidity)
